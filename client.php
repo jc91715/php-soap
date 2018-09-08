@@ -17,7 +17,7 @@ class client
         //authenticate 验证
         $auth_params = new stdClass();
         $auth_params->user_name = 'jc91715';
-        $auth_params->password = 'jc9171';
+        $auth_params->password = 'jc91715';
         $head_params = new SoapVar($auth_params,SOAP_ENC_OBJECT);
         $header = new SoapHeader('codev','authenticate',$head_params,false);
         $this->instance->__setSoapHeaders(array($header));
